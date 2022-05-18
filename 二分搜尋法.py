@@ -16,9 +16,10 @@ for i in range(size):
             num[j],num[j+1] = num[j+1],num[j]
             name[j],name[j+1] = name[j+1], name[j]
 
-no = input("請輸入中獎號碼：")
+no = int(input("請輸入中獎號碼："))
 while(min <= max):
-    mid = int((max-min)/2)
+    # print(min, max)
+    mid = int((max+min)/2)
     c += 1
     if (num[mid] == no):
         IsFound = True
